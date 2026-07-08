@@ -560,3 +560,10 @@ If used in a study, please describe:
 ## Version information update
 
 Last updated: July 2026.
+
+---
+
+## Author information 
+
+For any suggestions relating the DrugSet app feel free to contact Vjola Hoxhaj (v.hoxhaj@umcutrecht.nl).
+
