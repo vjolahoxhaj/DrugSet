@@ -22,7 +22,8 @@ load_or_install_github <- function(packages) {
 # Base CRAN Packages
 cran_packages <- c(
   "stringr", "data.table", "DT", "shiny", "shinyjs", 
-  "rstudioapi", "readxl", "htmltools", "utils", "tinytex", "shinyscreenshot"
+  "rstudioapi", "readxl", "htmltools", "utils", "tinytex", "shinyscreenshot", "dplyr",
+  "readr", "tibble", "purrr", "janitor", "openxlsx", "writexl"
 )
 
 # GitHub Packages
