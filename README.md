@@ -568,7 +568,7 @@ Last updated: July 2026.
 
 ## How to cite this work
 
-![Zenodo](https://img.shields.io/badge/Zenodo DOI-10.5281/zenodo.21257373-green)
+[![DOI](https://zenodo.org/badge/1216081309.svg)](https://doi.org/10.5281/zenodo.21257372)
 
 ---
 
