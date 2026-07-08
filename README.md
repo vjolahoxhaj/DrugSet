@@ -1,3 +1,5 @@
+![Status](https://img.shields.io/badge/Study_status-For_publication-blue)
+
 # DrugSet
 
 DrugSet is a Shiny application designed to support the creation, cleaning, updating, and export of medicinal products codelists for real-world data studies.
