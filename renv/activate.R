@@ -12,8 +12,8 @@ local({
     project <- getwd()
 
   # use start-up diagnostics if enabled
-  diagnostics <- Sys.getenv("RENV_STARTUP_DIAGNOSTICS", unset = "FALSE")
-  if (diagnostics) {
+diagnostics <- tolower(Sys.getenv("RENV_STARTUP_DIAGNOSTICS", unset = "FALSE")) %in% c("true", "t", "1")
+if (diagnostics) {
     start <- Sys.time()
     profile <- tempfile("renv-startup-", fileext = ".Rprof")
     utils::Rprof(profile)
