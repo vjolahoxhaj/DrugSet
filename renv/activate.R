@@ -108,9 +108,9 @@ if (diagnostics) {
   
   renv_ansify_enabled <- function() {
   
-    override <- Sys.getenv("RENV_ANSIFY_ENABLED", unset = NA)
-    if (!is.na(override))
-      return(as.logical(override))
+override <- Sys.getenv("RENV_ANSIFY_ENABLED", unset = NA)
+if (!is.na(override))
+  return(tolower(override) %in% c("true", "t", "1"))
   
     pane <- Sys.getenv("RSTUDIO_CHILD_PROCESS_PANE", unset = NA)
     if (identical(pane, "build"))
