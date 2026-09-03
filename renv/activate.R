@@ -12,8 +12,8 @@ local({
     project <- getwd()
 
   # use start-up diagnostics if enabled
-diagnostics <- tolower(Sys.getenv("RENV_STARTUP_DIAGNOSTICS", unset = "FALSE")) %in% c("true", "t", "1")
-if (diagnostics) {
+  diagnostics <- Sys.getenv("RENV_STARTUP_DIAGNOSTICS", unset = "FALSE")
+  if (diagnostics) {
     start <- Sys.time()
     profile <- tempfile("renv-startup-", fileext = ".Rprof")
     utils::Rprof(profile)
@@ -108,9 +108,9 @@ if (diagnostics) {
   
   renv_ansify_enabled <- function() {
   
-override <- Sys.getenv("RENV_ANSIFY_ENABLED", unset = NA)
-if (!is.na(override))
-  return(tolower(override) %in% c("true", "t", "1"))
+    override <- Sys.getenv("RENV_ANSIFY_ENABLED", unset = NA)
+    if (!is.na(override))
+      return(as.logical(override))
   
     pane <- Sys.getenv("RSTUDIO_CHILD_PROCESS_PANE", unset = NA)
     if (identical(pane, "build"))
